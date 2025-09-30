@@ -33,7 +33,7 @@ This README will guide you through setting up the project locally, writing envir
 ### 1. Clone the repository
 
 ```bash
-git clone <your-repo-url>
+git clone  https://github.com/FizaShakil/DevConnect-Lite.git
 cd devconnect-lite
 ```
 
@@ -48,7 +48,7 @@ npm install
 Since environment variables are not shared, you must create your own `.env` file in the root directory:
 
 ```env
-PORT= 5000
+PORT= 8000
 CORS_ORIGIN= your-frontend-uri
 MONGODB_URI=your-mongodb-atlas-uri
 ACCESS_TOKEN_SECRET= your-access-secret-string
@@ -221,14 +221,20 @@ Creates `exports/projects.json` file on the server.
 ##  Folder Structure
 
 ```
-project-root/
-│── controllers/      # Route controllers (auth, project, bid)
-│── models/           # Mongoose models (User, Developer, Project, Bid)
-│── middlewares/      # Custom middlewares (auth, checkRole)
-│── routes/           # API routes
-│── utils/            # Helper functions (ApiError, ApiResponse, asyncHandler)
-│── exports/          # JSON export folder (auto-created when /projects/export API endpoint hits)
-│── server.js / index.js
+│── public
+│── src
+  │── controllers/      # Route controllers (auth, project, bid)
+  │── models/           # Mongoose models (User, Developer, Project, Bid)
+  │── middlewares/      # Custom middlewares (auth, checkRole)
+  │── routes/           # API routes
+  │── utils/            # Helper functions (ApiError, ApiResponse, asyncHandler)
+  │── exports/          # JSON export folder (auto-created when /projects/export API endpoint hits)
+  │── server.js
+  |── index.js
+  |── app.js
 │── package.json
 │── .env (not included)
+│── .prettierrc
 ```
+##### Developed by Fiza Shakil- Full Stack Web Developer
+###### Checkout my Portfolio: [Fiza Shakil](https://fiza-shakil.vercel.app)
