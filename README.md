@@ -75,7 +75,7 @@ npm run dev
 Server should run at:
 
 ```
-http://localhost:5000
+http://localhost:8000
 ```
 
 ---
